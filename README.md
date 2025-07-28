@@ -10,3 +10,14 @@ Features
 - Persistent Chat History: Stores conversation history in Redis, ensuring messages are remembered even after the application is closed and reopened.
 
 - Dockerized Redis: Redis runs in a Docker container, providing a clean, portable, and easily manageable database solution without direct system installation.
+
+Technologies Used
+- Python: The core programming language.
+
+- Streamlit: For building the web application UI.
+
+- Google Gemini API: For AI model integration.
+
+- Redis: For in-memory data storage (chat history).
+
+- Docker: For containerizing the Redis database.
