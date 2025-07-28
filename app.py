@@ -8,7 +8,7 @@ import os # This helps us get information from your computer's environment
     # IMPORTANT: Replace "YOUR_GEMINI_API_KEY" with the actual API key you copied from Google AI Studio.
     # For a quick start, you can paste it directly here. For better security in real projects,
     # you'd set it as an environment variable.
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "AIzaSyB1jyTSdoz7eDAYDMt4HgZWuEyvi9ottDI")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "AIzaSyDTD1oYlj6COl4k7ba6AVAcEUEg_ZZfMaM")
 
     # Configure Google Generative AI with your API key
 genai.configure(api_key=GEMINI_API_KEY)
@@ -48,8 +48,7 @@ def clear_chat_history():
     # --- Gemini Model Initialization ---
     # Initialize the Generative Model (the Gemini "brain")
     # 'gemini-pro' is a good general-purpose model for text.
-model = genai.GenerativeModel('gemini-pro')
-
+model = genai.GenerativeModel('gemini-1.5-flash')
     # --- Streamlit User Interface (UI) Setup ---
     # This sets up how your chatbot app will look in the web browser.
 st.set_page_config(page_title="My First Gemini Chatbot", layout="centered")
